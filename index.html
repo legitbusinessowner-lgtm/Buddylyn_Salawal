@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buddylyn’s Salawal | Tailor Shop</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    :root {
+      --brand:#5F9E73;      /* header - darker green */
+      --brand-dark:#A8D5BA; /* footer - soft green */
+      --text:#2F2F2F;
+      --card:#F8FFF8;
+      --line:#E1EDE1;
+      --radius:16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      color: var(--text);
+      background: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--brand);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(to right, #5F9E73, #A8D5BA);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .hero .cta {
+      display: inline-block;
+      background: white;
+      color: #5F9E73;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .hero .cta:hover {
+      background: #4C8D61;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* SECTION HEADINGS */
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 30px 0 15px;
+      color: #3C6548;
+    }
+
+    /* PRODUCTS SECTION */
+    #products {
+      padding: 20px 20px 40px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    .card p {
+      color: #4C4C4C;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #F4FBF6;
+      padding: 40px 20px;
+      border-top: 2px solid #A8D5BA;
+      border-bottom: 2px solid #A8D5BA;
+    }
+    #about .content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    #about img {
+      width: 200px;
+      border-radius: 16px;
+      margin: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* CONTACT SECTION */
+    #contact {
+      background: #F8FFF8;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    #contact p {
+      font-size: 1rem;
+      margin: 6px 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--brand-dark);
+      text-align: center;
+      padding: 15px;
+      color: #2F2F2F;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="logo.png" alt="Buddylyn’s Salawal Logo">
+      <h1>Buddylyn’s Salawal</h1>
+    </div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Buddylyn’s Salawal</h1>
+    <p>Tailored comfort, crafted with care — for every Filipino family.</p>
+    <a href="#products" class="cta">See Our Designs</a>
+  </section>
+
+  <section id="products">
+    <h2>Our Creations</h2>
+    <div class="products">
+      <div class="card">
+        <img src="salawal1.jpg" alt="Classic Men's Shorts">
+        <h3>Classic Men’s Shorts</h3>
+        <p>₱450 | Custom sizes available</p>
+      </div>
+      <div class="card">
+        <img src="salawal2.jpg" alt="Women's Casual Shorts">
+        <h3>Everyday Comfort</h3>
+        <p>₱400 | Cotton fabric</p>
+      </div>
+      <div class="card">
+        <img src="salawal3.png" alt="Children's Shorts">
+        <h3>Kid’s Playtime Shorts</h3>
+        <p>₱350 | Soft and durable</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="content">
+      <img src="about.jpg" alt="Our Workshop">
+      <p>
+        Buddylyn’s Salawal started as a small family sewing shop with just two machines and a dream.  
+        Today, we proudly design, cut, and sew our very own shorts and dresses — all made locally with love.  
+      </p>
+      <p>
+        We use high-quality, comfortable fabrics to ensure every piece feels just right.  
+        Supporting local craftsmanship is at the heart of what we do — from the first stitch to the final press.  
+      </p>
+      <p><em>“Handmade with pride, worn with joy.”</em></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Poblacion, Polomolok, South Cotabato</p>
+    <p>📞 0991-234-5678</p>
+    <p>✉️ buddylynsalawal@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Buddylyn’s Salawal | Handmade with love in the Philippines 🇵🇭</p>
+  </footer>
+
+</body>
+</html>
