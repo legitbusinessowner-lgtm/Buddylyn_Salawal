@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content=width=device-width, initial-scale=1"/>
+<title>Buddylyns Salawal</title>
+<meta name="description" content="Welcome to Buddylyns website!">
+<!-- Pretty font (optional) -->
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+/* === COLORS you can change === */
+:root{
+  --brand:#37474F;      /* header navy-gray */
+  --brand-dark:#263238; /* buttons + footer */
+  --text:#333;
+  --card:#f8f9fa;
+  --line:#e0e0e0;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+margin:0; font-family:'League Spartan', Arial, sans-serif;
+color:var(--text); background:#fff; line-height:1.45;
+}
+/* Header */
+header{position:sticky; top:0; z-index:10; background:var(--brand); color:#fff; padding:20px 14px; box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.wrap{max-width:1000px; margin:0 auto; display:flex; align-items:center; gap:12px; justify-content:space-between; flex-wrap:wrap}
+.brand{display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none}
+.brand img{width:50px; height:50px; object-fit:cover; border-radius:10px}
+.brand b{font-size:1.3rem}
+nav{display:flex; gap:8px; flex-wrap:wrap}
+.btn{background:var(--brand-dark); color:#fff; text-decoration:none; padding:10px 14px; border-radius:10px; font-weight:700}
+.btn:hover{filter:brightness(1.05)}
+main{max-width:1000px; margin:26px auto; padding:0 14px}
+/* Hero */
+.hero{display:grid; gap:12px; padding:24px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient( to bottom
+right, rgba(93,64,55,.06), rgba(62,39,35,.06) )}
+.hero h1{margin:0; font-size:2rem}
+.hero p{margin:0 0 6px; color:#6b5e58}
+.hero .cta{display:flex; gap:8px; flex-wrap:wrap}
+/* Product grid */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; margin-top:18px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:0 8px 20px
+rgba(0,0,0,.07); display:flex; flex-direction:column}
+.card img{width:100%; height:160px; object-fit:cover}
+.pad{padding:12px}
+.title{margin:0 0 4px; font-size:1.05rem; font-weight:800}
+.meta{margin:0 0 6px; color:#6b5e58}
+.row{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:auto}
+.price{font-weight:800}
+.add{border:none; background:var(--brand-dark); color:#fff; padding:8px 10px; border-radius:10px; font-weight:800; cursor:pointer}
+/* About + Contact sections */
+section{scroll-margin-top:90px}
+h2{margin:22px 0 6px; font-size:1.6rem; color:#5D4037}
+.about, .contact{border:1px solid var(--line); border-radius:var(--radius); padding:16px; background:#fff}
+
+/* Footer */
+footer{margin-top:28px; background:var(--brand-dark); color:#fff; padding:20px 14px}
+.foot{max-width:1000px; margin:0 auto; display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between}
+.foot a{color:#fff; text-decoration:none}
+@media (max-width:600px){ .card img{height:140px} }
+</style>
+</head>
+<body>
+<!-- Header with logo + links -->
+<header>
+<div class="wrap">
+<!-- Change logo.png to your logo file -->
+<a class="brand" href="#top"><img src="logo.png" alt="My Business Logo"><b>Buddylyns Salawal</b></a>
+<nav>
+<a class="btn" href="#products">Products</a>
+<a class="btn" href="#about">About</a>
+<a class="btn" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<!-- HERO / Welcome -->
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">Buddylyns Salawal</h1>
+<p>Locally produced quality products. Cut and sewed In style Clothes.</p>
+<div class="cta">
+<a class="btn" href="#products">See Products</a>
+<a class="btn" href="#contact">Visit / Contact</a>
+</div>
+</section>
+<!-- PRODUCTS -->
+<h2 id="products">Products</h2>
+<p class="meta">This are a variety of Shorts and Dresses for Kids.</p>
+<div class="grid">
+<!-- Duplicate these cards to add more products -->
+<article class="card">
+<img src="product1.png" alt="Product 1 photo">
+<div class="pad">
+<h3 class="title">Terno Barbie Dress</h3>
+<p class="meta">Corduroy Dress.</p>
+<div class="row">
+<span class="price">₱50</span>
+<button class="add" type="button">Add</button>
+</div>
+</div>
+</article>
+<article class="card">
+<img src="product2.png" alt="Product 2 photo">
+<div class="pad">
+<h3 class="title">Four Button Shorts</h3>
+<p class="meta">Blue Cotton Linen Shorts.</p>
+<div class="row">
+<span class="price">₱50</span>
+<button class="add" type="button">Add</button>
+</div>
+</div>
+</article>
+<article class="card">
+
+<img src="product3.png" alt="Product 3 photo">
+<div class="pad">
+<h3 class="title">Ribbon Skirt</h3>
+<p class="meta">Short Green Corduroy Skirt.</p>
+<div class="row">
+<span class="price">₱45</span>
+<button class="add" type="button">Add</button>
+</div>
+</div>
+</article>
+</div>
+<!-- ABOUT -->
+<h2 id="about">About Us</h2>
+<section class="about">
+<p><b>Our Story:</b> We started our business with 2 sewing machines back then we were making bed sheets and pillow cases<br>Now we design,cut and sew our very own products.</p>
+<ul>
+<li>We procure our materials locally.</li>
+<li>We’re kind to the planet.</li>
+<li>We support local dressmakers.</li>
+</ul>
+</section>
+<!-- CONTACT -->
+<h2 id="contact">Contact</h2>
+<section class="contact">
+<p>Email: <a href="mailto:buddylyn@salawal.biz">buddylyn@salawal.biz</a></p>
+<p>Phone: <a href="tel:+639171234567">+63 915 532 6982</a></p>
+<!-- Replace the map link with your city -->
+<p>Find us on the map: <a href="https://www.google.com/maps/search/garment+shop+near+me" target="_blank" rel="noopener">Open
+Map</a></p>
+</section>
+</main>
+<!-- Footer -->
+<footer>
+<div class="foot">
+<div>© 2025 Buddylyns Salawal</div>
+<div>
+<a href="#top">Back to top ↑</a>
+</div>
+</div>
+</footer>
+<!-- Optional JavaScript (just for fun) -->
+<script>
+// Make the "Add" buttons give a quick success message
+document.querySelectorAll('.add').forEach(btn=>{
+btn.addEventListener('click', ()=>{
+const old = btn.textContent;
+btn.textContent = 'Added ✓';
+setTimeout(()=> btn.textContent = old, 1000);
+});
+});
+</script>
+</body>
+</html>
